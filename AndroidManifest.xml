@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.romania"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.example.romania.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.romania.MyTabbedActivity"
+            android:label="@string/title_activity_my_tabbed"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.romania.CityActivity"
+            android:label="@string/title_activity_city"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.romania.MeteoActivity"
+            android:label="@string/title_activity_meteo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.romania.StartActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
